@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;applet.aDAFAGa&apos; to &apos;DisplayImage&apos;&#x0D;&#x0A;- Original project: &apos;Applet&apos;&#x0D;&#x0A;- Original element: &apos;applet.aDAFAGa&apos;&#x0D;&#x0A;- Renamed element: &apos;applet.DisplayImage&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;aDAFAGa&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;applet{aDAFAGa.java[aDAFAGa" matchStrategy="1" name="DisplayImage" qualified="false" references="true" similarDeclarations="false" stamp="1566273027834" textual="false" version="1.0"/>
+</session>

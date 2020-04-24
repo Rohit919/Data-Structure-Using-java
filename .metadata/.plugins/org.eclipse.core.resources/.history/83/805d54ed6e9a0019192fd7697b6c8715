@@ -1,0 +1,17 @@
+package Lecture14;
+
+public class LinkedListClient {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		LinkedList list1 = new LinkedList();
+		list1.addFirst(10);
+		list1.addLast(20);
+		list1.addLast(30);
+		list1.addLast(40);
+		list1.addLast(50);
+		list1.removeFirst();
+		list1.display();
+	}
+
+}

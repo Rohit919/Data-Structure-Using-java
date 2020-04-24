@@ -1,0 +1,19 @@
+package lacture4;
+
+public class Maxelement {
+
+	public static void main(String[] args) {
+		int[] arr = {10,20,30,40,50};
+		System.out.println(max(arr));
+	}
+	public static int max(int[] arr) {
+		int temp=0;
+		for(int i=0;i<=5;i++) {
+			if(temp<arr[i]){
+				temp=arr[i];
+			}
+		}
+		return temp;
+	}
+
+}

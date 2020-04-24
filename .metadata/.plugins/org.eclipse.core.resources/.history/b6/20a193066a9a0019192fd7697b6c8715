@@ -1,0 +1,14 @@
+package Lecture14;
+
+public class LinkedListClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList list1 = new LinkedList();
+		list1.addFirst(10);
+		list1.addLast(20);
+		list1.display();
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package Recursion;
+
+import java.util.Scanner;
+
+public class PalindromeNumber {
+	public static void main(String[] args) {
+		int Number,  Reverse;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please Enter any number to Check for Palindrome: ");
+		Number = sc.nextInt();
+		Reverse = reverseNumber(Number, 0);
+		System.out.format("Reverse of entered number is = %d\n", Reverse);
+		if(Number == Reverse) {
+			System.out.format("%d is Palindrome Number.", Number);
+		}
+		else  {
+			System.out.format("%d is Not a Palindrome Number.", Number);
+		}
+	}
+	public static int reverseNumber(int Number, int Reverse) {
+		if(Number > 0) {
+			int Reminder = Number %10; 
+		    Reverse = Reverse * 10+ Reminder;
+			reverseNumber(Number /10, Reverse);
+		}
+		return Reverse;
+	}
+
+}

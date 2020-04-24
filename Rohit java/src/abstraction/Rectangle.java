@@ -1,0 +1,27 @@
+package abstraction;
+
+public class Rectangle extends Geomatary {
+	public double l;
+	public double w;
+	public Rectangle() {
+		l=1.0;
+		w=1.0;
+	}
+	public Rectangle(double l, double w) {
+		this.l=l;
+		this.w=w;
+	}
+	public double area() {
+		return l*w;
+	}
+	public double circumference() {
+		return 2*(l+w);
+	}
+	public double getlength() {
+		return l;
+	}
+	public double getwidth() {
+		return w;
+	}
+
+}

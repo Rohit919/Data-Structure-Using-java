@@ -1,0 +1,116 @@
+package interface1;
+
+interface GeoAnalyzer {
+	final static float PI = 3.142F;
+
+	float area();
+
+	float perimeter();
+}
+
+class Circle implements GeoAnalyzer {
+	float radius;
+
+	Circle(float r) {
+		radius = r;
+	}
+
+	Circle() {
+		radius = 1.0F;
+	}
+
+	public float area() {
+		return PI * radius * radius;
+	}
+
+	public float perimeter() {
+		return 2 * PI * radius;
+	}
+
+	public float getradius() {
+		return radius;
+	}
+}
+
+class Ellipse implements GeoAnalyzer {
+	float minor;
+	float major;
+
+	Ellipse(float m, float n) {
+		minor = m;
+		major = n;
+	}
+
+	Ellipse() {
+		major = 1.0F;
+		minor = 0.5F;
+	}
+
+	public float area() {
+		return PI * major * minor;
+	}
+
+	public float perimeter() {
+		return PI * major * minor;
+	}
+
+	public float getmajor() {
+		return major;
+	}
+
+	public float getminor() {
+		return minor;
+	}
+}
+
+class Rectangle implements GeoAnalyzer {
+	float l;
+	float w;
+
+	Rectangle(float l, float w) {
+		this.l = l;
+		this.w = w;
+	}
+
+	Rectangle() {
+		l = 1.0F;
+		w = 0.5F;
+	}
+
+	public float area() {
+		return l * w;
+	}
+
+	public float perimeter() {
+		return 2 * (l + w);
+	}
+
+	public float getlength() {
+		return l;
+	}
+
+	public float getwedith() {
+		return w;
+	}
+}
+
+public class GeoDemo {
+
+	public static void main(String[] args) {
+		GeoAnalyzer[] geoObject = new GeoAnalyzer[5];
+		geoObject[0] = new Circle(5);
+		geoObject[1] = new Ellipse(5, 4);
+		geoObject[2] = new Rectangle(8, 6);
+		geoObject[3] = new Circle(2);
+		geoObject[4] = new Ellipse(2, 2);
+		float totalArea = 0.0F;
+		for(int i=0; i<5;i++){
+			System.out.println(geoObject[i].area());
+			totalArea = totalArea + geoObject[i].area();
+		}
+		System.out.println("Total Area = "+totalArea);
+
+	}
+
+
+}
